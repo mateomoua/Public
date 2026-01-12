@@ -9,6 +9,18 @@
 	4.	Preview applied to #tmpB.
 	5.	Exact same updates can be applied to production via acct_id.
 
+
+✅ Key Improvements
+	1.	Single transaction per account number ensures:
+	•	If subs fail → main is never closed.
+	•	If main fails → all subs are rolled back.
+	•	Other account numbers are unaffected.
+	2.	Explicit validation after subs and after main with THROW ensures business rules are enforced.
+	3.	Duplicates are quarantined and never closed.
+	4.	Safe preview in #tmpB allows review before production update.
+	5.	Exact application to production via acct_id guarantees no mistakes.
+
+
 /* =========================
 1️⃣ STAGING CSV: Table A
 ========================= */
