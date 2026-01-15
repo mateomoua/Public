@@ -6,6 +6,15 @@ Perfect! Let’s enhance the workflow to enforce the sub-first closing rule, inc
 	•	Applies per account number, so duplicates or multiple sub accounts are handled correctly.
 	•	Keeps row-level status (SUCCESS / FAIL) for each row.
 
+✅ Features
+	1.	Sub-first closing: all eligible sub accounts close before main.
+	2.	Transactional safety per account: any failure rolls back main + subs for that account.
+	3.	Row-level status (SUCCESS / FAIL) for audit.
+	4.	Preview mode: validate without changing PROD.
+	5.	Works correctly for duplicates, multiple subs, and missing main/sub scenarios.
+
+
+
 /* =========================================================
 ACCOUNT CLOSE WORKFLOW - SUB-FIRST CLOSING WITH TRANSACTION
 ========================================================= */
